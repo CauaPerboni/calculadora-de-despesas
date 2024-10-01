@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de Despesas Pessoais</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Despesas Pessoais</h1>
+
+        <div class="form-group">
+            <input type="text" id="descricao" placeholder="Descrição" required>
+            <input type="number" id="valor" placeholder="Valor" required>
+            <button onclick="adicionarDespesa()">Adicionar Despesa</button>
+            <button onclick="adicionarReceita()">Adicionar Receita</button>
+        </div>
+
+        <h2>Relatório Mensal</h2>
+        <div id="relatorio"></div>
+        
+        <h2>Gráficos</h2>
+        <canvas id="graficoDespesas"></canvas>
+        <canvas id="graficoReceitas"></canvas>
+
+        <h2>Saldo</h2>
+        <div id="saldo"></div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
